@@ -1,0 +1,91 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #669999;
+  font-family: Arial;
+}
+
+
+/* header section */
+
+.mobile-header {
+  display: none;
+}
+
+.desktop-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 4rem;
+  z-index: 1;
+}
+
+.desktop-header .logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.desktop-header nav {
+  margin-right: 1.5rem;
+}
+
+.desktop-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: SlateGray;
+  transition: all 200ms;
+}
+
+.desktop-nav a:hover {
+  color: black;
+}
+
+.desktop-nav a:active {
+  color: DodgerBlue;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 4rem;
+    z-index: 1;
+  }
+  .mobile-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 1.5rem;
+    justify-content: space-between;
+  }
+  .mobile-nav img {
+    vertical-align: middle;
+  }
+}
+
+
+/* banner section */
+
+
+/* features section */
+
+
+/* learning section */
+
+
+/* thesis section */
+
+
+/* footer section */
