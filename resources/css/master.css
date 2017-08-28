@@ -3,11 +3,24 @@ html {
 }
 
 body {
-  background-color: #669999;
+  background-color: white;
   font-family: Arial;
 }
 
 strong {
+  font-weight: bold;
+}
+
+p {
+  color: #404040;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+h1 {
+  color: #404040;
+  font-size: 2rem;
+  line-height: 1.125;
   font-weight: bold;
 }
 
@@ -36,6 +49,11 @@ strong {
 
 #logo-text {
   font-size: 1.25rem;
+  color: Gray;
+}
+
+#logo-text strong {
+  color: black;
 }
 
 .desktop-header nav {
@@ -45,16 +63,17 @@ strong {
 .desktop-nav a {
   margin-left: 1rem;
   text-decoration: none;
-  color: SlateGray;
-  transition: all 200ms;
+  color: #404040;
+  transition: all 400ms;
 }
 
 .desktop-nav a:hover {
-  color: black;
+  background-color: #ffffcc;
 }
 
 .desktop-nav a:active {
-  color: DodgerBlue;
+  color: black;
+  background-color: #ffff66;
 }
 
 @media only screen and (max-width: 640px) {
@@ -85,6 +104,62 @@ strong {
 
 /* banner section */
 
+.banner {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  align-items: center;
+  background-color: LightGray;
+}
+
+.banner-image {
+  max-width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.banner-text {
+
+}
+
+.banner-text p {
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.banner-button {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+  text-decoration: none;
+  background-color: #404040;
+  color: white;
+  transition: all 300ms;
+}
+
+.banner-button:hover {
+  background-color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.banner-button:active {
+  color: #ffff66;
+  box-shadow: 0 -15px 40px 0 rgba(255,255,102,0.5), 0 15px 40px 0 rgba(255,255,102,0.5);
+}
 
 /* features section */
 
