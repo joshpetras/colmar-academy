@@ -165,7 +165,8 @@ h1 {
 
 .features {
   display: flex;
-  align-items: center;
+  position: relative;
+  top: 4rem;
 }
 
 .quote {
@@ -175,10 +176,39 @@ h1 {
   margin: 2rem 1.5rem;
 }
 
-
 .quote-image img {
   width: 100%;
   height: auto;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  max-width: 40%;
+}
+
+.story {
+  display: flex;
+}
+
+.story-image {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 65%;
 }
 
 /* learning section */
