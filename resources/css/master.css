@@ -14,7 +14,7 @@ strong {
 p {
   color: #666666;
   font-size: 0.8rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 p.credit {
@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   color: #404040;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.125;
 }
 
@@ -253,7 +253,7 @@ h3 {
 }
 
 .story-content a {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-decoration: none;
   color: DodgerBlue;
 }
@@ -263,6 +263,58 @@ h3 {
 }
 
 /* learning section */
+
+.learning {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  top: 4rem;
+  background-color: LightGray;
+}
+
+.learning h2 {
+  margin-top: 2rem;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: calc(100% - 9rem);
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 4rem) / 3);
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+}
+
+.course-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-content span {
+  color: #666666;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  padding: 0.5rem 0;
+}
 
 
 /* thesis section */
