@@ -12,9 +12,15 @@ strong {
 }
 
 p {
-  color: #404040;
-  font-size: 1rem;
+  color: #666666;
+  font-size: 0.8rem;
   line-height: 1.4;
+}
+
+p.credit {
+  color: #666666;
+  font-size: 0.7rem;
+  line-height: 1;
 }
 
 h1 {
@@ -22,6 +28,19 @@ h1 {
   font-size: 2rem;
   line-height: 1.125;
   font-weight: bold;
+}
+
+h2 {
+  color: #404040;
+  font-size: 1.75rem;
+  line-height: 1.125;
+  font-weight: bold;
+}
+
+h3 {
+  color: #404040;
+  font-size: 1.3rem;
+  line-height: 1.125;
 }
 
 /* header section */
@@ -113,7 +132,7 @@ h1 {
 }
 
 .banner-image {
-  max-width: 60%;
+  width: 60%;
   margin: 2rem 1.5rem;
 }
 
@@ -125,7 +144,7 @@ h1 {
 .banner-content {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  width: 40%;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
@@ -142,7 +161,7 @@ h1 {
 .banner-button {
   display: inline-block;
   text-align: center;
-  width: 100%;
+  width: 16rem;
   padding: 0.5rem 0;
   margin: 1.5rem 0;
   text-decoration: none;
@@ -172,8 +191,12 @@ h1 {
 .quote {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  width: 60%;
   margin: 2rem 1.5rem;
+}
+
+.quote-image {
+  width: 100%;
 }
 
 .quote-image img {
@@ -181,16 +204,34 @@ h1 {
   height: auto;
 }
 
+.quote-content {
+  margin-top: 2rem;
+}
+
+.quote-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.quote-content .credit {
+  margin: 2rem 0;
+}
+
 .stories {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 1rem;
-  max-width: 40%;
+  width: 40%;
+  padding-top: 1rem;
+  border-left: 1px solid LightGray;
+}
+
+.story:last-child {
+  background-color: LightGray;
 }
 
 .story {
   display: flex;
+  border-bottom: 1px solid LightGray;
 }
 
 .story-image {
@@ -209,6 +250,16 @@ h1 {
   flex-direction: column;
   justify-content: center;
   max-width: 65%;
+}
+
+.story-content a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: DodgerBlue;
+}
+
+.story-content p {
+  margin: 0.5rem 0;
 }
 
 /* learning section */
