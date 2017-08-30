@@ -249,6 +249,10 @@ h3 {
   background-color: LightGray;
 }
 
+.story:active {
+  background-color: #bfbfbf;
+}
+
 .story-image {
   width: 35%;
   height: auto;
