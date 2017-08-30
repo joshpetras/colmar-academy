@@ -249,10 +249,6 @@ h3 {
   background-color: LightGray;
 }
 
-.story:active {
-  background-color: #bfbfbf;
-}
-
 .story-image {
   width: 35%;
   height: auto;
@@ -409,6 +405,10 @@ h3 {
 
 .thesis-content .stories .story:first-child {
   margin-top: 1rem;
+}
+
+.thesis-content .stories .story:active {
+  background-color: #bfbfbf;
 }
 
 /* footer section */
