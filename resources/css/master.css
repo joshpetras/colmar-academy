@@ -18,6 +18,10 @@ p {
   transition: all 400ms;
 }
 
+.blue {
+  color: #1E90FF;
+}
+
 .credit {
   color: #666666;
   font-size: 0.7rem;
@@ -229,7 +233,7 @@ h3 {
   border-left: 1px solid LightGray;
 }
 
-.features .stories .story:first-child{
+.features .stories .story:first-child {
   border-style: none;
 }
 
@@ -247,6 +251,14 @@ h3 {
 
 .story:hover {
   background-color: LightGray;
+}
+
+.story:active {
+  background-color: #404040;
+}
+
+.story:active h3, .story:active p {
+  color: LightGray;
 }
 
 .story-image {
@@ -268,19 +280,12 @@ h3 {
   max-width: 65%;
 }
 
-.story-content a {
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: #1e90ff;
-  transition: all 400ms;
-}
-
-.story-content a:hover {
-  color: #0066cc;
-}
-
 .story-content p {
   margin: 0.5rem 0;
+}
+
+.story-content p.blue {
+  margin: 0;
 }
 
 
@@ -406,14 +411,6 @@ h3 {
   margin-top: 1rem;
 }
 
-.thesis-content .stories .story:active {
-  background-color: #404040;
-}
-
-.thesis-content .stories .story:active h3,
-.thesis-content .stories .story:active p {
-  color: LightGray;
-}
 
 /* footer section */
 
