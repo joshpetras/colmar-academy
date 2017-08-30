@@ -328,7 +328,6 @@ h3 {
 
 .course:active h3, .course:active span, .course:active p {
   color: Chartreuse;
-  font-family: monospace;
 }
 
 .course-image {
@@ -408,7 +407,12 @@ h3 {
 }
 
 .thesis-content .stories .story:active {
-  background-color: #bfbfbf;
+  background-color: #404040;
+}
+
+.thesis-content .stories .story:active h3,
+.thesis-content .stories .story:active p {
+  color: LightGray;
 }
 
 /* footer section */
