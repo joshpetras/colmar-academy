@@ -229,13 +229,23 @@ h3 {
   border-left: 1px solid LightGray;
 }
 
+.features .stories .story:first-child{
+  border-style: none;
+}
+
 .features .stories .story:last-child {
-  background-color: LightGray;
+  border-style: none;
 }
 
 .story {
   display: flex;
+  border-top: 1px solid LightGray;
   border-bottom: 1px solid LightGray;
+  transition: all 300ms;
+}
+
+.story:hover {
+  background-color: LightGray;
 }
 
 .story-image {
@@ -311,12 +321,13 @@ h3 {
 }
 
 .course:active {
-  box-shadow: 0 -15px 40px 0 rgba(255, 255, 102, 0.5), 0 15px 40px 0 rgba(255, 255, 102, 0.5);
+  box-shadow: 0 -15px 40px 0 rgba(127, 255, 0, 0.5), 0 15px 40px 0 rgba(127, 255, 0, 0.5);
   background-color: #404040;
 }
 
 .course:active h3, .course:active span, .course:active p {
-  color: #ffff66;
+  color: Chartreuse;
+  font-family: monospace;
 }
 
 .course-image {
@@ -392,10 +403,8 @@ h3 {
 }
 
 .thesis-content .stories .story:first-child {
-  background-color: LightGray;
   margin-top: 1rem;
 }
-
 
 /* footer section */
 
