@@ -342,10 +342,16 @@ h3 {
   .features .stories .story {
     flex-direction: column;
     border-style: none;
+    margin-bottom: 2rem;
   }
   .features .stories .story .story-image {
     margin: 0;
     width: 100%;
+  }
+  .features .stories .story .story-content {
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
   #desktop-orientation-img,
   #desktop-campus-img,
