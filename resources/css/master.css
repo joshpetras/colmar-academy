@@ -441,7 +441,26 @@ h3 {
   padding: 0.5rem 0;
   transition: all 500ms;
 }
-
+@media only screen and (max-width: 640px) {
+  .learning {
+    background-color: white;
+    border-top: 1px solid LightGray;
+    border-bottom: 1px solid LightGray;
+  }
+  .course-image,
+  .course-content span,
+  .course-content p {
+    display: none;
+  }
+  .courses {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+  .course {
+    background-color: LightGray;
+  }
+}
 
 /* thesis section */
 
