@@ -490,6 +490,18 @@ h3 {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 640px) {
+  .thesis .thesis-content .video-section .video-content {
+    display: none;
+  }
+  .thesis .thesis-content .stories {
+    display: none;
+  }
+  .thesis .thesis-content .video-section {
+    width: 100%;
+    margin: 1rem 0 1.5rem 0;
+  }
+}
 
 /* footer section */
 
@@ -503,4 +515,13 @@ footer {
 
 footer span {
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  footer {
+    border-style: none;
+  }
+  footer nav {
+    display: none;
+  }
 }
