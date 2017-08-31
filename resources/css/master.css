@@ -304,9 +304,7 @@ h3 {
   height: auto;
 }
 
-#mobile-orientation-img,
-#mobile-campus-img,
-#mobile-guest-img {
+#mobile-orientation-img, #mobile-campus-img, #mobile-guest-img {
   display: none;
 }
 
@@ -357,18 +355,12 @@ h3 {
     margin-left: 1rem;
     margin-top: 1rem;
   }
-  #desktop-orientation-img,
-  #desktop-campus-img,
-  #desktop-guest-img {
+  #desktop-orientation-img, #desktop-campus-img, #desktop-guest-img {
     display: none;
   }
-
-  #mobile-orientation-img,
-  #mobile-campus-img,
-  #mobile-guest-img {
+  #mobile-orientation-img, #mobile-campus-img, #mobile-guest-img {
     display: inline;
   }
-
 }
 
 
@@ -441,14 +433,19 @@ h3 {
   padding: 0.5rem 0;
   transition: all 500ms;
 }
+
 @media only screen and (max-width: 640px) {
   .learning {
     background-color: white;
     border-top: 1px solid LightGray;
     border-bottom: 1px solid LightGray;
   }
-  .course-image,
-  .course-content span,
+  .course-image {
+    display: none;
+  }
+  .course-content span {
+    display: none;
+  }
   .course-content p {
     display: none;
   }
@@ -458,10 +455,12 @@ h3 {
     margin: 0.5rem 0 1.5rem 0;
   }
   .course {
+    flex-basis: auto;
     background-color: LightGray;
     margin: 0.5rem 1rem;
   }
 }
+
 
 /* thesis section */
 
@@ -526,6 +525,7 @@ h3 {
     margin: 1rem 0 1.5rem 0;
   }
 }
+
 
 /* footer section */
 
