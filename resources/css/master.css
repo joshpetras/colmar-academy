@@ -465,21 +465,25 @@ h3 {
     border-bottom: 1px solid LightGray;
   }
   .course-image, .course-content span, .course-content p {
-    transition: display 300ms;
     display: none;
-  }
-  .course:active .course-image {
-    display: inline;
   }
   .courses {
     flex-direction: column;
     width: 100%;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 0.75rem 0 1.75rem 0;
   }
   .course {
     flex-basis: auto;
     background-color: LightGray;
-    margin: 0.5rem 1rem;
+    margin: 0.25rem 1rem;
+  }
+  .course:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .course:active {
+    box-shadow: 0 -5px 10px 0 rgba(127, 255, 0, 0.5), 0 5px 10px 0 rgba(127, 255, 0, 0.5);
+    background-color: #404040;
   }
 }
 
