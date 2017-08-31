@@ -464,14 +464,12 @@ h3 {
     border-top: 1px solid LightGray;
     border-bottom: 1px solid LightGray;
   }
-  .course-image {
+  .course-image, .course-content span, .course-content p {
+    transition: display 300ms;
     display: none;
   }
-  .course-content span {
-    display: none;
-  }
-  .course-content p {
-    display: none;
+  .course:active .course-image {
+    display: inline;
   }
   .courses {
     flex-direction: column;
